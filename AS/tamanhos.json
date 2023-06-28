@@ -1,0 +1,12 @@
+{
+    "tamanhos":[
+        {
+            "tamanho" : "broto",
+            "preço" : 15.50
+        },
+        {
+            "tamanho" : "familia",
+            "preço" : 45.75
+        }
+    ]
+}

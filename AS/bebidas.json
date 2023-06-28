@@ -1,0 +1,12 @@
+{
+    "bebidas":[
+        {
+            "nome" : "Coca-cola lata",
+            "preco" : 4.50
+        },
+        {
+            "nome" : "Guarana Antartica 2L",
+            "preco" : 8.00
+        }
+    ]
+}

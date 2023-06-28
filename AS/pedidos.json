@@ -1,0 +1,53 @@
+{
+    "numero" : 1,
+    "pizzas":[
+        {
+            "tamanho" : {
+                "tamanho" : "familia",
+                "preço" : 45.75
+            },
+            "sabores" :[
+                {
+                    "nome" : "calabresa"
+                },
+                {
+                    "nome" : "marguerita"
+                },
+                {
+                    "nome" : "camarão"
+                },
+                {
+                    "nome" : "4 queijos"
+                }
+            ]
+        },
+        {
+            "tamanho" : {
+                "tamanho" : "broto",
+                "preço" : 15.50
+            },
+            "sabores" :[
+                {
+                    "nome" : "chocolate com morango"
+                }
+            ]
+        }
+    ],
+    "bebidas":[
+        {
+            "nome" : "Coca-cola lata",
+            "preço" : 4.50
+        },
+        {
+            "nome" : "Guarana Antartica 2L",
+            "preço" : 8.00
+        }
+    ],
+    "cliente":{
+        "clienteId" : "649b635af97b2b2b8bb4f3b9"
+    },
+    "entrega" : "sim",
+    "mesa" : "Balcão",
+    "dataHorario" : "2023-06-24 22:34:45"  
+}
+

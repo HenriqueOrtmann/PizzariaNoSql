@@ -1,0 +1,13 @@
+{
+    "clientes":[
+        {
+            "nome" :"José Alvaro",
+            "endereco" :{
+                "rua" : "Av. Castelo Branco",
+                "numero" : 1234,
+                "Bairro" : "Igra sul",
+                "Cidade" : "Torres"
+            }
+        }
+    ]
+}

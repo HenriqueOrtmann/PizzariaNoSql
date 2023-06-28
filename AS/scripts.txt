@@ -1,0 +1,98 @@
+use pizzariaDoHenrique
+db.pedidos.insertOne(
+{
+    "numero" : 1,
+    "pizzas":[
+        {
+            "tamanho" : {
+                "tamanho" : "familia",
+                "preco" : 45.75
+            },
+            "sabores" :[
+                {
+                    "nome" : "calabresa"
+                },
+                {
+                    "nome" : "marguerita"
+                },
+                {
+                    "nome" : "camarão"
+                },
+                {
+                    "nome" : "4 queijos"
+                }
+            ]
+        },
+        {
+            "tamanho" :{
+                "tamanho" : "broto",
+                "preco" : 15.50
+            },
+            "sabores" :[
+                {
+                    "nome" : "chocolate com morango"
+                }
+            ]
+        }
+    ],
+    "bebidas":[
+        {
+            "nome" : "Coca-cola lata",
+            "preco" : 4.50
+        },
+        {
+            "nome" : "Guarana Antartica 2L",
+            "preco" : 8.00
+        }
+    ],
+    "cliente":{
+        "clienteId" : "649b635af97b2b2b8bb4f3b9"
+    },
+    "entrega" : "sim",
+    "mesa" : "Balcão",
+    "dataHorario" : "2023-06-24 22:34:45"
+})
+
+db.bebidas.insertMany([{
+    "nome" : "Coca-cola lata",
+    "preco" : 4.50
+},
+{
+    "nome" : "Guarana Antartica 2L",
+    "preco" : 8.00
+}])
+
+db.sabores.insertMany([{
+    "nome" : "calabresa"
+},
+{
+    "nome" : "marguerita"
+},
+{
+    "nome" : "camarão"
+},
+{
+    "nome" : "4 queijos"
+},
+{
+    "nome" : "chocolate com morango"
+}])
+
+db.clientes.insertOne({
+    "nome" :"José Alvaro",
+    "endereco" :{
+        "rua" : "Av. Castelo Branco",
+        "numero" : 1234,
+        "Bairro" : "Igra sul",
+        "Cidade" : "Torres"
+    }
+})
+
+db.bebidas.updateOne({nome: "Coca-cola lata"}, {$set: {preço: 5.00}})
+
+db.sabores.deleteOne({nome: "4 queijos"})
+
+db.pedidos.find({numero:1})
+
+db.pedidos.find({ "numero": 1 }, { "pizzas.tamanho": 1, "pizzas.preco": 1 })
+
